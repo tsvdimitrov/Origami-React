@@ -1,5 +1,6 @@
 import Header from './components/Header/Header.js';
 import Menu from './components/Menu/Menu.js';
+import Main from './components/Main/Main.js';
 import style from './App.module.css';
 
 function App() {
@@ -8,9 +9,7 @@ function App() {
       <Header />
       <div className={style.container}>
         <Menu />
-        <main className="main">
-
-        </main>
+        <Main />
       </div>
     </div >
   );

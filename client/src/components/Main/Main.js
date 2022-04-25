@@ -2,7 +2,7 @@ import './Main.css';
 
 const Main = () => {
     return (
-        <main>
+        <main className="main-container">
             <h1>
                 Sooooome Heading
             </h1>

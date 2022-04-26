@@ -1,11 +1,13 @@
 import './MenuItem.css';
 
 const MenuItem = ({
-    children
+    id,
+    onClick,
+    children,
 }) => {
     return (
         <li className="menu-item">
-            <a href="">
+            <a href="#" onClick={() => onClick(id)}>
                 {children}
             </a>
         </li>

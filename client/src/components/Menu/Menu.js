@@ -6,9 +6,15 @@ import './Menu.css';
 import { MENU_ITEMS } from './MenuConstants';
 
 
-const Menu = () => {
-
+const Menu = ({
+    onMenuItemClick
+}) => {
     const [currentItem, setCurrentItem] = useState();
+
+    const menuItemClickHandler = (id) => {
+        setCurrentItem(id);
+        onMenuItemClick(id);
+    }
 
     return (
         <aside className="menu">
@@ -17,7 +23,7 @@ const Menu = () => {
                     key={x.id}
                     id={x.id}
                     isSelected={x.id == currentItem}
-                    onClick={setCurrentItem}
+                    onClick={menuItemClickHandler}
                 >
                     {x.text}
                 </MenuItem>

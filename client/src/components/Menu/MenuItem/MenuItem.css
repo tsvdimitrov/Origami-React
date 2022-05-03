@@ -26,3 +26,6 @@
     color: #ffa000;
 }
 
+.menu-item-selected {
+    background-color: darkorange;
+}

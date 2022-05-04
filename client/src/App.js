@@ -29,15 +29,25 @@ class App extends Component {
     this.setState({ selectedPost: id });
   }
 
+  getPosts() {
+    if (!this.state.selectedPost) {
+      return this.state.posts;
+    } else {
+      return [this.state.post.find(x => x.id == this.state.selectedPost)];
+    }
+  }
+
   render() {
     return (
       <div className={style.app}>
         <Header />
         <div className={style.container}>
-          <Menu />
-          <Main
-            posts={this.state.posts}
+          <Menu
             onMenuItemClick={this.onMenuItemClick.bind(this)}
+          />
+          <Main
+            posts={this.getPosts()}
+
           />
         </div>
       </div >

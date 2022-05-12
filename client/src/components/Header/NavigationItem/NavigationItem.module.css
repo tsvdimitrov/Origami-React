@@ -19,3 +19,8 @@
     border-top: 2px solid #ffa000;
 }
 
+nav .listItem:hover {
+    border-top: none;
+    border-bottom: 2px solid #ffa000;
+    font-weight: bold;
+}

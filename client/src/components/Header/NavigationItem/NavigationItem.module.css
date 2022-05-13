@@ -13,6 +13,11 @@
     vertical-align: top;
 }
 
+.listItem:not(:first-child) {
+    padding: 2%;
+    margin-top: 1.5%;
+    border-top: 2px solid #ffa000;
+}
 
 nav .listItem:hover {
     border-top: none;

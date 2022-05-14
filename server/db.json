@@ -4,6 +4,16 @@
             "id": 1,
             "content": "Some content here",
             "author": "Pesho"
+        },
+        {
+            "id": 2,
+            "content": "Some content here 2",
+            "author": "Gosho"
+        },
+        {
+            "id": 3,
+            "content": "Lorem impsum",
+            "author": "Stamat"
         }
     ]
 }

@@ -13,8 +13,7 @@ const Main = ({
             {posts.map(x =>
                 <Post
                     key={x._id}
-                    content={x.content}
-                    author={x.author}
+                
                 />
             )}
         </main >

@@ -14,7 +14,7 @@ const Main = ({
                 <Post
                     key={x._id}
                     content={x.content}
-                    author={author}
+                    author={x.author}
                 />
             )}
         </main >

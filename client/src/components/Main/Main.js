@@ -12,7 +12,7 @@ const Main = ({
             <div className="posts"></div>
             {posts.map(x =>
                 <Post
-                    key={x.id}
+                    key={x._id}
                     content={x.content}
                     author={x.author}
                 />

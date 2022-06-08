@@ -12,7 +12,7 @@ const Post = ({
             </p>
             <div>
                 <span>
-                    <small>Author:</small> {author_id}
+                    <small>Author:</small> {author}
                 </span>
             </div>
         </div>

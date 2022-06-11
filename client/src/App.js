@@ -1,11 +1,13 @@
 
 import { Component } from 'react';
+import { Route, Link, NavLink, Redirect, Switch } from 'react-router-dom';
 
 import * as postService from './services/postService';
 
 import Header from './components/Header/Header.js';
 import Menu from './components/Menu';
 import Main from './components/Main';
+import About from './components/About';
 import style from './App.module.css';
 
 class App extends Component {
@@ -45,6 +47,7 @@ class App extends Component {
           <Menu
             onMenuItemClick={this.onMenuItemClick.bind(this)}
           />
+          <Route path='/about' component={About}/>
           <Main
             posts={this.getPosts()}
 

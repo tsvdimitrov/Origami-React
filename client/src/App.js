@@ -1,6 +1,6 @@
 
 import { Component } from 'react';
-import { Route, Link, NavLink, Redirect, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import * as postService from './services/postService';
 
@@ -8,6 +8,7 @@ import Header from './components/Header/Header.js';
 import Menu from './components/Menu';
 import Main from './components/Main';
 import About from './components/About';
+import ContactUs from './components/ContactUs';
 import style from './App.module.css';
 
 class App extends Component {
@@ -35,7 +36,7 @@ class App extends Component {
     if (!this.state.selectedPost) {
       return this.state.posts;
     } else {
-      return [this.state.post.find(x => x.id == this.state.selectedPost)];
+      return [this.state.post.find(x => x.id === this.state.selectedPost)];
     }
   }
 
@@ -47,7 +48,9 @@ class App extends Component {
           <Menu
             onMenuItemClick={this.onMenuItemClick.bind(this)}
           />
-          <Route path='/about' component={About}/>
+          <Route path='/about' component={About} />
+          <Route path='/contact-us' component={ContactUs} />
+
           <Main
             posts={this.getPosts()}
 

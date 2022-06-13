@@ -45,16 +45,12 @@ class App extends Component {
       <div className={style.app}>
         <Header />
         <div className={style.container}>
-          <Menu
-            onMenuItemClick={this.onMenuItemClick.bind(this)}
-          />
-          <Route path='/about' component={About} />
-          <Route path='/contact-us' component={ContactUs} />
+          <Menu onMenuItemClick={this.onMenuItemClick.bind(this)} />
 
-          <Main
-            posts={this.getPosts()}
+          <Route path="/about" component={About} />
+          <Route path="/contact-us" component={ContactUs} />
 
-          />
+          <Main posts={this.getPosts()} />
         </div>
       </div >
     );

@@ -59,14 +59,14 @@ class App extends Component {
 
 export default App;
 
-// function App() {
-//   return (
-//     <div className={style.app}>
-//       <Header />
-//       <div className={style.container}>
-//         <Menu />
-//         <Main />
-//       </div>
-//     </div >
-//   );
-// }
+function App() {
+  return (
+    <div className={style.app}>
+      <Header />
+      <div className={style.container}>
+        <Menu />
+        <Main />
+      </div>
+    </div >
+  );
+}
